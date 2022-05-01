@@ -1,4 +1,4 @@
-### MAY 1ST 2022
+# MAY 1ST 2022
 
 # PROJECT: Post your Work on GitHub
 
@@ -15,5 +15,6 @@
     * Git Commands Documentation.pdf
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+>* [git documentation](https://git-scm.com/doc)
+>* [commit style guide](https://udacity.github.io/git-styleguide/)
+>* [git key terms](https://video.udacity-data.com/topher/2017/March/58d31eb5_ud123-git-keyterms/ud123-git-keyterms.pdf)
