@@ -18,3 +18,4 @@
 >* [git documentation](https://git-scm.com/doc)
 >* [commit style guide](https://udacity.github.io/git-styleguide/)
 >* [git key terms](https://video.udacity-data.com/topher/2017/March/58d31eb5_ud123-git-keyterms/ud123-git-keyterms.pdf)
+>* [undoing commits](https://www.atlassian.com/git/tutorials/undoing-changes)
