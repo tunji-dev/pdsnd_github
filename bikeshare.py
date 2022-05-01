@@ -116,7 +116,7 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     print('The Most Common Start Station Is: {}'.format(df['Start Station'].mode()[0]))
-    
+
     print('The Most Common End Station Is: {}'.format(df['End Station'].mode()[0]))
 
     # Display most frequent combination of start station and end station trip
@@ -171,7 +171,8 @@ def user_stats(df, city):
 
 def display_data(df):
     """ Displays raw data to the user, upon their request."""
-    i = 0 
+    # Start from row 0
+    row = 0 
     user_input = input("Would you like to see 5 rows of raw data? (please type yes or no): ").lower()
     while True:
         if user_input not in ['yes', 'no']:
@@ -183,9 +184,10 @@ def display_data(df):
     if user_input == 'no':
         print('Thank you bye')
     else:
-        while i+5 < df.shape[0]: 
-            print(df.iloc[i:i+5])
-            i += 5
+        # Ensure we dont move past the number of rows, recall .shape returns number of (row,column)
+        while row+5 < df.shape[0]: 
+            print(df.iloc[row:row+5])
+            row += 5
             new_input = input("Would you like to view 5 more rows? (type yes or no): ").lower()
             if new_input != 'yes':
                 print('Thank you bye')
